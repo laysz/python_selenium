@@ -1,7 +1,5 @@
 from selenium.webdriver.common.by import By
-from selenium.webdriver.common.keys import Keys
 from base_page import BasePage
-
 
 class ProductPage(BasePage):
 
@@ -20,5 +18,5 @@ class ProductPage(BasePage):
     def cart_btn(self):
         return self.find(By.XPATH, '//*[@id="add_to_cart"]/button/span')
 
-    def layer_cart_btn(self):
-        return self.find(By.XPATH, '//*[@id="layer_cart"]/div[1]/div[2]/div[4]/a/span')
+    def layer_cart_btn_locator(self):
+        return (By.XPATH, '//*[@id="layer_cart"]/div[1]/div[2]/div[4]/a/span')

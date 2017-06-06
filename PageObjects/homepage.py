@@ -21,3 +21,6 @@ class HomePage(BasePage):
     def is_title_matches(self):
         """Verifies that the hardcoded text "Python" appears in page title"""
         return self.PAGE_TITLE in self.driver.title
+
+    def contact_us(self):
+        return self.find(By.XPATH, '//*[@id="contact-link"]/a')
