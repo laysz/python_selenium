@@ -26,6 +26,8 @@ class CheckOut01(BaseTest):
         wait = WebDriverWait(self.driver, 5)
         wait.until(EC.element_to_be_clickable(self.product.layer_cart_btn_locator())).click()
 
+        self.take_screenshot('./myfile.jpg')
+
         # go through order page
         wait = WebDriverWait(self.driver, 5)
         wait.until(EC.title_is('Order - My Store'))

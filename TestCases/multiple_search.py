@@ -13,6 +13,6 @@ class SearchMultiple(BaseTest):
         self.home_page.enter_search_box("dress")
         self.home_page.search_box_btn().click()
 
-        # select from search the item with Blouse
+        # select fro  m search the item with Blouse
         self.search.find_product_in_search_results('Blouse')[0].click()
 
